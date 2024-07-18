@@ -5,6 +5,7 @@ Section - 3
 1. It is super most class of all the classes in java.
 2. Object class shares all the properties to subclasses.
 3. it contains **11** non-static methods. 
+
 ***11 non-static methods***
 	1. public String toString();
 	2. public boolean equals(Object obj)
