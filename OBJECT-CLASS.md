@@ -99,4 +99,56 @@ class Circle
 >1. Java doesn't provide the real address of an object.
 >2. Whenever programmer tries to print the reference variable toString() is implicitly called.
 
+**Student.java**
+
+```java
+package "your pakage here";
+
+public class Student {
+	String name;
+	char gender;
+	int rollno;
+	public Student(String name, char gender, int rollno) 
+	{
+		super();
+		this.name = name;
+		this.gender = gender;
+		this.rollno = rollno;
+	}
+	
+	@Override
+	public String toString()
+	{
+		String res = "{ Name = "+name+", Gender = "+gender+", Rollno = "+rollno+"}";
+		return res;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		Student s = (Student)o;
+		boolean res = this.name.equals(s.name) && this.gender == s.gender && this.rollno == s.rollno;
+		return res;
+	}
+}
+
+```
+
+**StudentDriver.java**
+
+```java
+package "your pakage here";
+
+public class StudentDriver {
+	public static void main(String[] args) 
+	{
+		Student s1 = new Student("Srinivas",'m',208);
+		Student s2 = new Student("Srinivas",'m',208);
+		System.out.println(s1.toString());
+		System.out.println(s2.toString());
+		System.out.println(s1.equals(s2));
+	}
+}
+
+```
+
 [equales() example and toString() example](Object_class)
