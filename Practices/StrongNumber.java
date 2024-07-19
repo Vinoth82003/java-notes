@@ -2,7 +2,6 @@ package Practices;
 
 import java.util.Scanner;
 
-// to find the given number is strong number
 public class StrongNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
