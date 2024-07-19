@@ -98,3 +98,5 @@ class Circle
 >***NOTE***:
 >1. Java doesn't provide the real address of an object.
 >2. Whenever programmer tries to print the reference variable toString() is implicitly called.
+
+[equales-example](Object_class)
