@@ -230,6 +230,8 @@ In equals method compare the state of an current(this) object with the passed ob
 
 ***Example***:
 
+**Book.java**
+
 ```java
 class Book
 {
@@ -243,6 +245,19 @@ class Book
 	{
 		Book b = (Book)o;
 		return this.bname.equals(b.bname);
+	}
+}
+```
+
+**BookDriver.java**
+
+```java
+public class BookDriver {
+	public static void main(String[] args) {
+		Book b1 = new Book("Java");
+		Book b2 = new Book("Java");
+		
+		System.out.println(b1.equals(b2));
 	}
 }
 ```
