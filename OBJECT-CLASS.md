@@ -152,3 +152,97 @@ public class StudentDriver {
 ```
 
 [equales() example and toString() example](Object_class)
+
+
+[19/07/2024]
+
+***equales(Object)*** :
+
+- The return type of equals(Object) method is boolean.
+- to equals(Object) method we can pass reference of any object.
+- the java.lang.Object class implementation of equals(Object) method is used to compare the reference to two object.
+
+***Example***:
+
+```java
+class Book
+{
+	String bname;
+	Book(String bname)
+	{
+		this.bname = bname;
+	}
+}
+```
+
+***Case 1***
+```java
+Book b1 = new Book("java");
+Book b2 = b1;
+sop(b1.name); //Java
+sop(b2.name); //Java
+sop(b1 == b2); //true
+sop(b1.equals(b2)); // true
+```
+
+```mermaid
+graph LR
+b1-->c
+b2-->c
+c[bname = java]
+```
+
+***Case 2***:
+
+```java
+Book b1 = new Book("java");
+Book b2 = new Book("java");
+System.out.println(b1.name); //Java
+System.out.println(b2.name); //Java
+System.out.println(b1 == b2); //false
+System.out.println(b1.equals(b2)); // true
+```
+
+```mermaid
+graph LR
+
+b1-->c[bname = java]
+b2-->d[bname = java]
+
+```
+
+>***NOTE***:
+>
+>- If the reference is same == operator will return true else if return false.
+>- The equals(Object) method is similar to == operator.
+
+
+***Purpose of Overriding equals(Object)***
+
+we override to equals(Object) method to compare the state of an two Objects instead of comparing reference of two Objects.
+
+>***NOTE***:
+> - If equals(object) method is not overridden if compares the reference of two objects similar to == operator
+> - If equals(Object) method is overridden if compares the state of two objects, in such case comparing the reference of two objects is possible only by == operator.
+
+***Design tip***:
+In equals method compare the state of an current(this) object with the passed object by down-casting.
+
+***Example***:
+
+```java
+class Book
+{
+	String bname;
+	Book(String bname)
+	{
+		this.bname = bname;
+	}
+	@Override
+	public boolean equals(Object o)
+	{
+		Book b = (Book)o;
+		return this.bname.equals(b.bname);
+	}
+}
+```
