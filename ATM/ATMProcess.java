@@ -42,7 +42,7 @@ public class ATMProcess {
     public static int Loopotp(){
         int min = 1000;
         int max = 10000;
-        ATMProcess.OTP = (int)(Math.random()*(max - min) + min);
+        ATMProcess.OTP = (int) ((Math.random()*(max - min)) + min);
         return ATMProcess.OTP;
     }
 
