@@ -114,7 +114,19 @@ This structure allowed the system to efficiently manage permissions based on the
 |while  | for  |
 |--|--|
 |condition is mandatory in while loop   | condition is optional in for loop |
+| cannot write print statement in while loop condition block | we can write print statement inside the initialization and updating block.
 
 2. What is the default value of while loop?
 	 - the default value is **true**.
 
+# Arrays:
+
+1. What is an array?
+2. in what situation we get array index out of bound exception?
+3. when do we get negative array size exception?
+4. how many ways we can create an array?
+	- 3 ways to create an array;
+	- ``` int [] array = new int[5]```
+	- ```int [] ar = {10,20,30}```
+	- ``` int [] a = new int[] {10,20,30}```
+5. what is ***vararg*** method? 
