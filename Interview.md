@@ -74,4 +74,13 @@
 	|  variables declared during the method declaration statement is **formal statement**. | The values passed during a method call statement is called **Actual arguments**. |
 
 11. What is ```System.in``` in object creation of scanner class.
-	- 
+	- ```System.in``` where ***system*** is class and ***in*** is a variable holding buffers of the class where data is stored.
+
+12. Rules for using return statement.
+	- If the method return type anything ***other than void*** then the ***return type is mandatory***.
+	- Suppose the method return type is void, the ***return key*** word is optional.
+	- we can write ***only one value*** return in return statement.
+
+# Decision Making Statements:
+
+1. Is it very much mandatory to write condition inside **if**?
