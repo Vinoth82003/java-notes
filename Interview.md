@@ -88,6 +88,14 @@
 	- because the if clock will execute based on the condition.
 
 2. Give one real time example where you used ***elseif ladder***?
+	- A real-time example where I used the ***else if ladder*** was while working on a **user authentication system** for a web application. In this system, different user roles (like admin, moderator, and regular user) required different permissions. Here's how the ***else if ladder*** was applied:
+
+	- **If** the user was an admin, they had full access to the system.
+	- **Else if** the user was a moderator, they had limited access to manage content but not user accounts.
+	- **Else if** the user was a regular user, they could only view content.
+	- **Else**, if the user wasn't logged in, they were redirected to the login page.
+
+This structure allowed the system to efficiently manage permissions based on the user's role.
 
 3. Diff b/w ***else if ladder*** and ***switch***
 	
@@ -96,4 +104,17 @@
 | in else if ladder if none of the condition is true it goes for else. | in switch if none of the case passes it goes for default   |
 | in else if all the datatypes are allowed | In switch case only few datatypes are allowed. not allowed datatype Eg: long, float, double. |
 | only 2 keywords in else if.  (if, else) | we have 3 decision making keywords (switch, case, default) |
+|break is optional in elseif ladder |it is mandatory to use break keyword in switch case.|
+| Efficiency is less | Efficiency is more|
+
+# Looping statements
+
+1. Diff b/w **for** and **while** loop? 
+	
+|while  | for  |
+|--|--|
+|condition is mandatory in while loop   | condition is optional in for loop |
+
+2. What is the default value of while loop?
+	 - the default value is **true**.
 
