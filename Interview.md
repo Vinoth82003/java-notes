@@ -84,3 +84,16 @@
 # Decision Making Statements:
 
 1. Is it very much mandatory to write condition inside **if**?
+	- ***Condition is mandatory***, 
+	- because the if clock will execute based on the condition.
+
+2. Give one real time example where you used ***elseif ladder***?
+
+3. Diff b/w ***else if ladder*** and ***switch***
+	
+| elseif ladder | switch |
+|--|--|
+| in else if ladder if none of the condition is true it goes for else. | in switch if none of the case passes it goes for default   |
+| in else if all the datatypes are allowed | In switch case only few datatypes are allowed. not allowed datatype Eg: long, float, double. |
+| only 2 keywords in else if.  (if, else) | we have 3 decision making keywords (switch, case, default) |
+
